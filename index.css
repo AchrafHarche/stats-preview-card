@@ -1,0 +1,179 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+
+}
+
+
+body {
+    font-size: 15px;
+    background-color: hsl(233, 47%, 7%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+
+
+}
+
+
+
+.container {
+
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    background-color: hsl(244, 38%, 16%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    overflow: hidden;
+    margin: 2rem;
+}
+
+.sec2 img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.sec2 {
+    position: relative;
+
+}
+
+
+
+.sec2::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: hsl(277, 64%, 61%);
+    opacity: 0.5;
+}
+
+
+
+.container h2 {
+
+    color: hsl(0, 0%, 100%);
+    font-family: 'Lexend Deca', sans-serif;
+    font: weight 700;
+    font-size: 35px;
+
+}
+
+.container span {
+    color: hsl(277, 64%, 61%);
+}
+
+.container p {
+
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    line-height: 1.8;
+
+}
+
+
+
+.sec1 div p {
+    line-height: 0.4;
+    margin-bottom: 1rem;
+}
+
+.sec1 div p:nth-child(1), ul li:nth-child(4), ul li:nth-child(7) {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+
+
+}
+
+.sec1 {
+    padding: 3rem;
+    text-align: start;
+
+
+}
+
+.sec3 {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row;
+    margin-right: 40px;
+
+
+
+}
+
+.attribution {
+    text-align: center;
+    color: white;
+}
+
+
+@media only screen and (max-width: 640px) {
+
+
+    body {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .wrapper {
+
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .sec1 {
+        text-align: center;
+    }
+
+    .sec2 {
+        order: -1;
+    }
+
+    .sec3 {
+
+        flex-direction: column;
+        text-align: center;
+        font-size: 18px;
+        margin-right: 0;
+    }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+
+        min-height: 100vh;
+    }
+
+    .sec1 {
+        padding: 2rem;
+    }
+
+    .se3 {
+        justify-content: space-evenly;
+    }
+}
